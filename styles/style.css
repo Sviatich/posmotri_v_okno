@@ -36,3 +36,259 @@ ul,
 ol {
   list-style: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 755px 415px;
+  gap: 30px;
+  position: relative;
+  transform: translate(0%, 50%);
+  align-items: start;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 79px;
+  line-height: 93%;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.title .content__accent {
+  color: #545050;
+}
+
+.result {
+  margin-top: 78px;
+  gap: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  margin-top: 78px;
+  width: 755px;
+  height: 410px;
+}
+
+.content__list {
+  height: 318px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
+.result__video {
+  object-fit: fill;
+  width: 753px;
+  height: 410px;
+}
+.result__video-container{
+  height: 410px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search-form__textfield {
+  background: transparent;
+  font-size: 18px;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  appearance: none;
+  margin-top: 5px;
+  padding: 3px 0;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  width: 237px;
+  margin-right: 27px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.search-form__textfield:active{
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  background: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  width: 205px;
+  border: 1px solid #ddd;
+  padding: 6px 0;
+  height: 37px;
+  cursor: pointer;
+}
+
+.search-form__submit-button:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button:active {
+  background-color: #545050;
+}
+
+.search-form__submit-button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.content__card-link:focus-visible .content__video-card {
+  border: 1px solid #fff;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  color: #fff;
+}
+
+.content__video-card-thumbnail {
+  width: 200px;
+}
+
+.more-button {
+  width: 100%;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #ddd;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  text-decoration: underline;
+}
+
+.more-button:active {
+  background-color: #545050;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  position: relative;
+  cursor: pointer;
+  z-index: -1;
+  margin-right: 9px;
+  background-color: #1b191a;
+}
+
+input[type='checkbox']:checked + .search-form__pseudo-checkbox {
+  background-color: #fff; 
+}
+
+.search-form__checkbox:hover {
+  text-decoration: underline;
+}
+
+.search-form__checkbox-list {
+  appearance: none;
+  margin-top: 1px;
+  padding: 3px 0px;
+  margin-bottom: 5px;
+  display: flex;
+  margin-right: 27px;
+}
+
+.search-form__checkbox-list .search-form__label:hover {
+  text-decoration: underline;
+}
+
+.content__list-item {
+  margin-bottom: 28px;
+}
+
+.content__list .content__list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__card-link_current .content__video-card {
+  background-color: #545050;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.content__card-link_current:has(.content__video-card) .content__video-card:hover {
+  text-decoration: none;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+}
+.search-form__label:focus {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
