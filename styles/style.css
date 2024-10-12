@@ -66,7 +66,6 @@ ol {
   line-height: 93%;
   text-transform: uppercase;
   margin-bottom: 23px;
-  letter-spacing: -1px;
 }
 
 .title .content__accent {
@@ -132,7 +131,7 @@ fieldset {
 }
 
 .search-form__fieldset:first-child {
-  margin-right: 26px;
+  margin-right: 27px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -152,6 +151,7 @@ fieldset {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+  line-height: 35px;
 }
 
 .content__video-card-description {
@@ -185,14 +185,14 @@ fieldset {
 
 .search-form__pseudo-checkbox {
   display: flex;
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   outline: 1px solid #fff;
   outline-offset: 1px;
   position: relative;
   cursor: pointer;
   z-index: -1;
-  margin-right: 11px;
+  margin-right: 9px;
   background-color: #1b191a;
 }
 
@@ -202,11 +202,11 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 
 .search-form__checkbox-list {
   appearance: none;
-  margin-top: 4px;
+  margin-top: 3px;
   padding: 3px 0px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   display: flex;
-  margin-right: 21px;
+  margin-right: 24px;
 }
 
 .content__list-item {
